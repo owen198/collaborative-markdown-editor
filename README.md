@@ -1,5 +1,5 @@
-# Live (GitHub-Flavored) Markdown Editor
+# Collorative Markdown Editor
 
-[Use it here](//jbt.github.io/markdown-editor)
+[Use it here](//52.37.139.168:3000/)
 
-Feel free to take the code and copy it and modify it and use it however you like. (If you really want a licence, see [WTFPL](http://www.wtfpl.net/txt/copying/))
+
