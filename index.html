@@ -2,24 +2,36 @@
 <html>
 <head>
   <title>Markdown Editor</title>
-  <script src="markdown-it.js"></script>
-  <script src="markdown-it-footnote.js"></script>
-  <script src="highlight.pack.js"></script>
-  <script src="emojify.js"></script>
-  <script src="codemirror/lib/codemirror.js"></script>
-  <script src="codemirror/overlay.js"></script>
-  <script src="codemirror/xml/xml.js"></script>
-  <script src="codemirror/markdown/markdown.js"></script>
-  <script src="codemirror/gfm/gfm.js"></script>
-  <script src="codemirror/javascript/javascript.js"></script>
-  <script src="codemirror/css/css.js"></script>
-  <script src="codemirror/htmlmixed/htmlmixed.js"></script>
-  <script src="codemirror/lib/util/continuelist.js"></script>
-  <script src="rawinflate.js"></script>
-  <script src="rawdeflate.js"></script>
-  <link rel="stylesheet" href="base16-light.css">
-  <link rel="stylesheet" href="codemirror/lib/codemirror.css">
-  <link rel="stylesheet" href="default.css">
+
+  <script src="public/javascripts/markdown-it.js"></script>  
+  <script src="public/javascripts/markdown-it-footnote.js"></script>
+  <!--  https://github.com//markdown-it/markdown-it -->              
+  <script src="public/javascripts/highlight.pack.js"></script>
+  <!-- 語法顏色 -->
+  <script src="public/javascripts/emojify.js"></script>
+
+  <script src="public/javascripts/codemirror/lib/codemirror.js"></script>
+  <script src="public/javascripts/codemirror/overlay.js"></script>
+  <script src="public/javascripts/codemirror/xml/xml.js"></script>
+  <script src="public/javascripts/codemirror/markdown/markdown.js"></script>
+  <script src="public/javascripts/codemirror/gfm/gfm.js"></script>
+  <script src="public/javascripts/codemirror/javascript/javascript.js"></script>
+  <script src="public/javascripts/codemirror/css/css.js"></script>
+  <script src="public/javascripts/codemirror/htmlmixed/htmlmixed.js"></script>
+  <script src="public/javascripts/codemirror/lib/util/continuelist.js"></script>
+
+  <!-- 不確定是什麼 -->
+  <script src="public/javascripts/rawinflate.js"></script>
+  <script src="public/javascripts/rawdeflate.js"></script>
+  <!-- 不確定是什麼 -->
+
+
+
+  <link rel="stylesheet" href="public/stylesheets/styles.css" />
+  <link rel="stylesheet" href="public/stylesheets/base16-light.css">
+  <link rel="stylesheet" href="public/javascripts/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="public/stylesheets/default.css">
+  
   <style>
     body {margin: 0;}
 
@@ -203,7 +215,8 @@
   </style>
 </head>
 <body>
-  <div id="in"><form><textarea id="code"># (GitHub-Flavored) Markdown Editor
+  <div id="in"><form><textarea id="code">
+# (GitHub-Flavored) Markdown Editor
 
 Basic useful feature list:
 
@@ -325,7 +338,7 @@ the inspiration to this, and some handy implementation hints, came.
         }
       }
     }
-
+    // 這裡
     var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
       mode: 'gfm',
       lineNumbers: false,
@@ -466,5 +479,10 @@ the inspiration to this, and some handy implementation hints, came.
       editor.focus();
     }
   </script>
+  <script src="public/javascripts/jquery.min.js"></script>
+  <script src="public/javascripts/socket.io.js"></script>
+  <script src="public/javascripts/ot.js"></script>
+  <script src="client.js"></script>
+ 
 </body>
 </html>
