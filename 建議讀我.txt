@@ -1,0 +1,7 @@
+你再用瀏覽器連線的時候一定要給id不然他路由抓不到id 
+範例:http://localhost:5000/?id=1234
+
+你可以先看server.js 跟 client.js 裡面我有寫一個小範例，再去看editor-socketio-server.js的code會比較看得懂。
+
+editor-socketio-server.js 
+115~121行似乎是重點 按照我看的感覺似乎他本身有寫分流的方式 但是需要測試。
