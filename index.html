@@ -3,7 +3,7 @@
 <head>
   <title>Markdown Editor</title>
 
-  <script src="public/javascripts/markdown-it.js"></script>  
+  <script src="/public/javascripts/markdown-it.js"></script>  
   <script src="public/javascripts/markdown-it-footnote.js"></script>
   <!--  https://github.com//markdown-it/markdown-it -->              
   <script src="public/javascripts/highlight.pack.js"></script>
@@ -447,13 +447,13 @@ the inspiration to this, and some handy implementation hints, came.
 
 
     function updateHash(){
-      window.location.hash = btoa( // base64 so url-safe
-        RawDeflate.deflate( // gzip
-          unescape(encodeURIComponent( // convert to utf8
-            editor.getValue()
-          ))
-        )
-      );
+      // window.location.hash = btoa( // base64 so url-safe
+      //   RawDeflate.deflate( // gzip
+      //     unescape(encodeURIComponent( // convert to utf8
+      //       editor.getValue()
+      //     ))
+      //   )
+      // );
     }
 
     if(window.location.hash){
@@ -483,6 +483,9 @@ the inspiration to this, and some handy implementation hints, came.
   <script src="public/javascripts/socket.io.js"></script>
   <script src="public/javascripts/ot.js"></script>
   <script src="client.js"></script>
- 
+  <script type="text/javascript">
+  
+</script>
+  
 </body>
 </html>
